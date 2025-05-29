@@ -1,0 +1,10 @@
+﻿  Render.cpp
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(145,22): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(145,27): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(145,32): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(146,21): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(146,26): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(147,22): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(147,27): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\KGlab\Render.cpp(147,32): warning C4305: инициализация: усечение из "double" в "float"
+  KGlab.vcxproj -> C:\Users\Daria\Desktop\архив кг\KGlabs-master\LAB4+\x64\Debug\KGlab.exe
