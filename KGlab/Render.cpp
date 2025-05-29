@@ -11,7 +11,7 @@
 #include "ObjLoader.h"
 #include "debout.h"
 
-//внутренняя логика "движка"
+
 #include "MyOGL.h"
 extern OpenGL gl;
 #include "Light.h"
@@ -59,7 +59,7 @@ Shader phong_sh;
 Shader vb_sh;
 Shader simple_texture_sh;
 
-// Только текстура аметиста
+
 Texture amethyst_tex;
 
 void initRender()
@@ -84,7 +84,7 @@ void initRender()
     simple_texture_sh.LoadShaderFromFile();
     simple_texture_sh.Compile();
 
-    // Загружаем только текстуру аметиста
+    
     amethyst_tex.LoadTexture("textures/amethyst.png");
 
     f.LoadModel("models//monkey.obj_m");
@@ -153,7 +153,7 @@ void Render(double delta_time)
     glMaterialf(GL_FRONT, GL_SHININESS, sh);
     glShadeModel(GL_SMOOTH);
 
-    // Отрисовка призмы с текстурой аметиста
+    // Отрисовка призмы 
     double vysota = 2;
     double A[]{ 0,0,0 }, B[]{ 0,3,0 }, C[]{ 7,6,0 }, D[]{ 1,0,0 };
     double A_v[]{ 0,0,vysota }, B_v[]{ 0,3,vysota }, C_v[]{ 7,6,vysota }, D_v[]{ 1,0,vysota };
@@ -163,7 +163,7 @@ void Render(double delta_time)
     double G_v[]{ -7,-4,vysota }, H_v[]{ -2,0,vysota };
     double I[]{ -4,6,0 }, I_v[]{ -4,6,vysota };
 
-    // Включаем текстуру аметиста перед отрисовкой призмы
+    
     if (texturing) {
         glEnable(GL_TEXTURE_2D);
         amethyst_tex.Bind();
@@ -284,10 +284,10 @@ void Render(double delta_time)
     glTexCoord2d(0, 1); glVertex3dv(B);
     glEnd();
 
-    // Отключаем текстуру после отрисовки призмы
+    
     glBindTexture(GL_TEXTURE_2D, 0);
 
-    // Остальной код без изменений
+    
     glLoadIdentity();
     camera.SetUpCamera();
     Shader::DontUseShaders();
